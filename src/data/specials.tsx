@@ -57,7 +57,7 @@ export const specials: Special[] = [
     material: 'ЛДСП',
     door: 'зеркало',
     size: '260/160/60',
-    type: 3,
+    type: 0,
   },
   {
     title: 'Шкаф Riviera/5',
@@ -108,7 +108,7 @@ export const specials: Special[] = [
     material: 'ЛДСП',
     door: 'зеркало',
     size: '260/160/60',
-    type: 3,
+    type: 0,
   },
   {
     title: 'Шкаф Comfort/5',
@@ -160,7 +160,7 @@ export const specials: Special[] = [
     material: 'ЛДСП',
     door: 'зеркало',
     size: '260/160/60',
-    type: 3,
+    type: 0,
   },
   {
     title: 'Шкаф WingLine/8',

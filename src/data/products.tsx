@@ -31,7 +31,7 @@ export const products: Product[] = [
     material: 'ЛДСП',
     door: 'зеркало',
     size: '260/160/60',
-    type: 1,
+    type: 0,
   },
   {
     title: 'Шкаф Comfort/5',
@@ -44,7 +44,7 @@ export const products: Product[] = [
     material: 'ЛДСП',
     door: 'зеркало',
     size: '260/160/60',
-    type: 1,
+    type: 0,
   },
   {
     title: 'Шкаф WingLine',
@@ -70,7 +70,7 @@ export const products: Product[] = [
     material: 'ЛДСП',
     door: 'зеркало',
     size: '260/160/60',
-    type: 1,
+    type: 2,
   },
   {
     title: 'Шкаф Comfort/3',
@@ -83,7 +83,7 @@ export const products: Product[] = [
     material: 'ЛДСП',
     door: 'зеркало',
     size: '260/160/60',
-    type: 1,
+    type: 2,
   },
   {
     title: 'шкаф WingLine/8',
@@ -108,7 +108,7 @@ export const products: Product[] = [
     material: 'ЛДСП',
     door: 'зеркало',
     size: '260/160/60',
-    type: 1,
+    type: 0,
   },
   {
     title: 'Шкаф Comfort/5',
@@ -160,7 +160,7 @@ export const products: Product[] = [
     material: 'ЛДСП',
     door: 'зеркало',
     size: '260/160/60',
-    type: 1,
+    type: 0,
   },
   {
     title: 'Шкаф WingLine/8',
@@ -173,6 +173,6 @@ export const products: Product[] = [
     material: 'ЛДСП',
     door: 'зеркало',
     size: '260/160/60',
-    type: 1,
+    type: 2,
   },
 ];

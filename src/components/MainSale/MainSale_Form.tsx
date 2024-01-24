@@ -31,9 +31,9 @@ export const MainSale_Form: FunctionComponent<Id> = ({
   }
 
   function submitHandler(e: FormEvent<HTMLFormElement>) {
-    setLoading(true)
     e.preventDefault();
     if (!error && e.currentTarget.tel.value) {
+      setLoading(true)
       fetch('https://jsonplaceholder.typicode.com/posts', {
         method: 'POST',
         body: JSON.stringify(answers),

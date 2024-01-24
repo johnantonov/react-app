@@ -1,11 +1,7 @@
 'use client'
 import css from './page.module.css'
-import { MainButton } from "@/components/Buttons/MainButton/MainButton"
 import { specials } from "@/data/specials"
 import { products } from '@/data/products'
-import { formatPrice } from "@/helpers/formatPrice"
-import Image from "next/image"
-import Link from "next/link"
 import img1 from '../../../../public/products/1.jpg'
 import img2 from '../../../../public/products/2.jpg'
 import img3 from '../../../../public/products/3.jpg'
