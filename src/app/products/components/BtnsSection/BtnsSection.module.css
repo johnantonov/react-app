@@ -1,0 +1,22 @@
+.btns {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 25px;
+}
+
+.price {
+  padding: 14px 20px;
+  border: 1px solid var(--InversText);
+  color: var(--InversText);
+  font-size: clamp(16px, 4vw, 26px);
+  font-weight: 400;
+  line-height: 175%;
+}
+
+.count p {
+  margin-bottom: 16px;
+  color: var(--InversText);
+  font-size: clamp(16px, 4vw, 25px);
+  font-weight: 400;
+  line-height: 137.5%;
+}

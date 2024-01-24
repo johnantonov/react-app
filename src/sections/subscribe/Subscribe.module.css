@@ -1,0 +1,40 @@
+.subscribe {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--UnusualBg);
+  padding: 57px 0;
+}
+
+.subscribe h2 {
+  text-align: center;
+  color: var(--MainText);
+  margin-bottom: 25px;
+}
+
+.subscribe__subtitle {
+  margin-bottom: 25px;
+  color: var(--MainText);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 93.333%;
+}
+
+.subscribe__decor {
+  position: absolute;
+  right: 10px;
+}
+
+@media (min-width: 992px) {
+  .subscribe {
+    padding: 134px 0;
+    background-image: url('../../../public/decor/phone.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 115% 60px;
+  }
+  .subscribe__subtitle {
+    margin-bottom: 43px;
+  }
+}

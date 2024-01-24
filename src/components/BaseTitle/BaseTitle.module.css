@@ -1,0 +1,8 @@
+.section__title {
+  color: var(--UsualText);
+  font-family: Cormorant;
+  font-size: clamp(39px, 5vw, 68px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 71.795%;
+}

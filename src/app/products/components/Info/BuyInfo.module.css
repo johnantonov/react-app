@@ -1,0 +1,7 @@
+.buy__info {
+  margin-bottom: 40px;
+  color: var(--InversText);
+  font-size: clamp(16px, 4vw, 25px);
+  font-weight: 400;
+  line-height: 137.5%;
+}

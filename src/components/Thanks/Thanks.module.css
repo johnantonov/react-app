@@ -1,0 +1,45 @@
+.ThanksPortal {
+  position: relative;
+  z-index: 99999999;
+}
+
+.thanks {
+  z-index: 9999999;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  padding: 6.4% 7.3% 5%;
+  width: 70%; 
+  text-align: center;
+  background: var(--MainBg);
+  color: var(--InversText);
+  font-size: 32px;
+  font-weight: 400;
+}
+.success__outside::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  content: '';
+  cursor: pointer;
+}
+.thanks__title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.thanks button {
+  display: block;
+  margin: 50px auto 0;
+}
+
+@media (max-width: 460px) {
+  .thanks {
+    width: 100%;
+  }
+}

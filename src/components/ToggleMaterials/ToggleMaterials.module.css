@@ -1,0 +1,21 @@
+.btn {
+  padding-bottom: clamp(3px, 2vw, 24px);
+  border: none;
+  background: inherit;
+
+  cursor: pointer;
+  color: #000;
+  font-size: clamp(18px, 3vw, 40px);
+  font-weight: 400;
+  line-height: 70%;
+}
+.btn:hover {
+  background: inherit !important;
+}
+.btn:first-of-type {
+  margin-right: clamp(31px, 12vw, 396px);
+}
+
+.btn_active {
+  border-bottom: 2px solid var(--InversText);
+}

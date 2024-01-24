@@ -1,0 +1,145 @@
+.how {
+  padding-bottom: 100px;
+}
+
+.how h2 {
+  margin-bottom: 40px;
+}
+
+.how__list {
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.how__comming {
+  background: url('../../../public/how/comming.svg');
+}
+.how__measure {
+  background: url('../../../public/how/measure.svg');
+}
+.how__project {
+  background: url('../../../public/how/project.svg');
+}
+.how__contract {
+  background: url('../../../public/how/contract.svg');
+}
+.how__prod {
+  background: url('../../../public/how/prod.svg');
+}
+.how__build {
+  background: url('../../../public/how/build.svg');
+}
+
+.how__item {
+  display: flex;
+  align-items: center;
+  padding-left: 120px;
+  width: 100%;
+  height: 80px;
+  color: var(--InversText);
+  font-size: clamp(20px, 2.5vw, 50px);
+  font-weight: 400;
+  line-height: 28px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.how__item svg, .contract__svg {
+  display: none;
+}
+
+.how__list li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.how__list li:not(:last-child)::after {
+  position: relative;
+  margin-top: 20px;
+  content: '';
+  width: 50px;
+  height: 50px;
+  background: url('../../../public/how/arrow.svg');
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 762px) {
+  .how {
+    padding-bottom: 148px;
+  }
+  .how h2 {
+    margin-bottom: 97px;
+  }
+}
+
+
+/* СОЗДАЕМ ПОСЛЕДОВАТЕЛЬНОСТЬ ШАГОВ СТРЕЛКАМИ */
+@media (min-width: 1120px) {
+  .how__list li:not(:last-child)::after {
+    display: none;
+  }
+  .how__list {
+    flex-flow: row wrap;
+  }
+  .how__item svg {
+    display: block;
+  }
+
+  .how__comming svg {
+    margin: 0 40px;
+  }
+
+  .how__measure {
+    margin-bottom: 80px;
+  }
+  .how__measure svg{
+    position: relative;
+    transform: translate(-50px, 80px);
+  }
+
+  .how__list li:nth-child(1) {
+    order: 1;
+  }
+  .how__list li:nth-child(2) {
+    order: 2;
+  }
+  .how__list li:nth-child(3) {
+    margin-left: 0px;
+    order: 4;
+  }
+  .how__list li:nth-child(4) {
+    order: 3;
+  }
+  .how__list li:nth-child(5) {
+    order: 5;
+  }
+  .how__list li:nth-child(6) {
+    order: 6;
+  }
+
+  .how__project {
+    padding-left: 90px;
+    margin-left: 30px;
+  }
+  .how__contract p{
+    margin-right: 20px;
+  }
+  .contract__svg {
+    display: block;
+  }
+
+  .how__prod p{
+    margin-right: 60px;
+  }
+
+  .how__prod svg {
+    margin-right: 40px;
+  }
+
+  .how__build {
+    margin-top: 70px;
+  }
+}

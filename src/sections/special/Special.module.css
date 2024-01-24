@@ -1,0 +1,50 @@
+.special {
+  margin-bottom: 104px;
+  position: relative;
+}
+
+.special h2 {
+  margin-bottom: 40px;
+}ы
+
+.img {
+  width: 90%;
+}
+
+.special__up {
+  margin-left: 70vw;
+}
+
+.special__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.special__list li {
+  flex: 25%;
+  margin-bottom: 52px;
+}
+
+@media (min-width: 769px) {
+  .special__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .special {
+    margin-bottom: 149px;
+  }
+  .special h2 {
+    margin-bottom: 100px;
+  }
+  .special__list li {
+    flex: 30%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .special__list li {
+    flex: 20%;
+  }
+}

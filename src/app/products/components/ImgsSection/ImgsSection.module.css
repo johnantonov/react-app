@@ -1,0 +1,43 @@
+.img {  
+  margin-bottom: 4%;
+  max-width: 450px;
+}
+.littleImgs {
+  max-width: 33%;
+  display: flex;
+  gap: 2%;
+}
+
+.littleImgs img {
+  width: 30%;
+}
+
+@media (min-width: 450px) {
+  .img {
+    max-width: none;
+    flex: 100% 0 0;
+    display: flex;
+    gap: 20px;
+  }
+  .littleImgs {
+    flex: 40.5%;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1072px) {
+  .imgs {
+    flex: 40%;
+  }
+  .img {
+    flex-direction: column;
+    width: 100%;
+    flex: 100%;
+  }
+
+  .littleImgs {
+    flex: 100%;
+    flex-direction: row;
+  }
+  
+}

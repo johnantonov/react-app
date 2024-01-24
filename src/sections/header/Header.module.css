@@ -1,0 +1,136 @@
+.header {
+  background-image: url('../../../public/header/moblieHeaderImg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 56px;
+}
+
+.header__h1 {
+  position: relative;
+  margin-bottom: clamp(23px, 4vw, 43px);
+}
+
+.header__h1::before {
+  position: absolute;
+  content: '';
+  top: -75px;
+  width: 83.967px;
+  height: 69.745px;
+  background-image: url('../../../public/badges/sale.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  padding-top: 16px;
+  margin-bottom: 101px;
+}
+
+.navsocials_1440 {
+  display: none;
+}
+
+.nav__dropdown {
+  margin-right: auto;
+}
+
+.header__logo {
+  margin-left: auto;
+  color: var(--LogoColor);
+  font-family: Playfair Display;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 162.5%;
+}
+
+.header__navlist {
+  display: none;
+}
+
+.header__navcontacts {
+  display: none;
+}
+
+.header__sale {
+  color: var(--MainText);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background: var(--BlurColor);
+  backdrop-filter: var(--BlurFilter);
+}
+
+.header__socials {
+  padding-top: 63px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .header {
+    background-image: url('../../../public/header/headerImg.png');
+  }
+  .header__h1::before {
+    display: none;
+  }
+  .header__nav {
+    padding-top: 34px;
+    justify-content: start;
+  }
+  .header__logo {
+    margin-right: 30px;
+  }
+  .header__navlist {
+    display: block;
+  }
+  .header__sale {
+    background: none;
+    backdrop-filter: none;
+  }
+  .nav__dropdown {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    padding-bottom: 304px;
+    position: relative;
+  }
+  .header__nav {
+    justify-content: space-between;
+  }
+  .header__navlist {
+    margin-right: 25px;
+  }
+  .header__navcontacts {
+    display: block;
+  }
+  .header__socials {
+    display: none;
+  }
+  .navsocials_1440 {
+    display: block;
+    position: absolute;
+    right: 70px;
+    top: 130px;
+    height: 35%;
+    border-right: 2px solid var(--MainText);
+  }
+  .navsocials_1440 > * {
+    position: relative;
+    flex-direction: column;
+    transform: translate(25px, 350px);
+  }
+  .navsocials_1440 > *::after {
+    position: absolute;
+    top: 115%;
+    right: 25px;
+    content: '';
+    width: 2px;
+    height: 200%;
+    border-right: 2px solid var(--MainText);
+  }
+}

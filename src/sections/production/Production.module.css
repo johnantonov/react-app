@@ -1,0 +1,133 @@
+.production {
+  margin-bottom: 102px;
+}
+
+.production h2 {
+  margin-bottom: 40px;
+}
+
+.production__main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 43px 20px;
+  width: 100%;
+}
+
+.production__main::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 38%;
+  height: 100%;
+  background-image: url('../../../public/production/prod1M.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.production__main::after {
+  z-index: 0;
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background-image: url('../../../public/production/prod2M.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.production__list {
+  position: relative;
+  z-index: 99;
+  width: 90%;
+  height: 100%;
+  padding: 9% 7% 7% 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  background: var(--BlurColor);
+  backdrop-filter: var(--BlurFilter);
+}
+
+.production__item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.production__num {
+  position: relative;
+  color: var(--MainText);
+  text-align: center;
+  font-size: 37px;
+  font-weight: 400;
+  line-height: 75.676%;
+}
+.production__num span {
+  position: relative;
+}
+
+.production__num::before {
+  position: absolute;
+  z-index: 0;
+  top: -10px;
+  left: -7px;
+  content: '0';
+  text-align: center;
+  color: var(--UsualText);
+  font-size: 37px;
+  font-weight: 400;
+  line-height: 75.676%; 
+}
+
+.production__text {
+  color: var(--MainText);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 135%;
+}
+
+
+@media (max-width: 360px) {
+  .production__main::before {
+    width: 100%;
+    height: 100%;
+  }
+  .production__main::after {
+    display: none;
+  }
+}
+
+@media (min-width: 450px) {
+  .production__main {
+    position: relative;
+    padding: clamp(65px, 10vw, 132px) clamp(40px, 10vw, 246px);
+    width: 100%;
+  }
+  .production__main::before {
+    background-image: url('../../../public/production/prod1D.jpg');
+  }
+  .production__main::after {
+    background-image: url('../../../public/production/prod2D.jpg');
+  }
+  
+}
+
+@media (min-width: 769px) {
+  .production {
+    margin-bottom: 148px;
+  }  
+  .production h2 {
+    margin-bottom: 116px;
+  }
+  
+}

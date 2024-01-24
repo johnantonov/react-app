@@ -1,0 +1,51 @@
+.badgeWrapper {
+  position: relative;
+}
+
+.badgeWrapper > div {
+  position: absolute;
+  left: -12px;
+  top: -12px;
+  @media (min-width: 769px) {
+    left: -25px;
+    top: -25px;
+  }
+}
+
+.img {
+  margin-bottom: 24px;
+}
+
+.title {
+  margin-right: 10px;
+  font-size: clamp(16px, 4vw, 30px);
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.info {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainPrice {
+  top: -20px;
+  right: 0;
+  position: absolute;
+  color: var(--AlarmColor);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 215.385%;
+}
+
+.price {
+  color: var(--UsualText);
+  font-size: clamp(19px, 4vw, 28px);
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.title:hover {
+  color:var(--HoverButton) !important;
+}

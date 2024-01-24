@@ -1,0 +1,61 @@
+.product {
+  padding: 0 0 100px;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+
+
+.title {
+  color: var(--InversText);
+  font-size: clamp(29px, 4vw, 55px);
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.text {
+  color: var(--InversText);
+  font-size: clamp(15px, 4vw, 25px);
+  font-weight: 400;
+  line-height: 132%;
+  margin-bottom: 40px;
+}
+
+.text_1 {
+  display: none;
+  padding-bottom: 30px;
+  border-bottom: 2px solid var(--MainButtonColor);
+}
+
+.buy_tablet {
+  display: none;
+}
+
+
+
+@media (min-width: 1072px) {
+  .main {
+    flex-direction: row-reverse;
+  }
+  .main__info {
+    flex: 60%;
+  }
+  .title {
+    margin-bottom: 36px;
+  }
+  .buy_tablet {
+    display: block;
+  }
+  .buy_phone {
+    display: none;
+  }
+  .text_1 {
+    display: block;
+  }
+  .text_2 {
+    display: none;
+  }
+  
+}

@@ -1,0 +1,10 @@
+.MainBtn {
+  padding: 14px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--MainText);
+  font-size: 26px; 
+  font-weight: 400;
+  line-height: 107.692%;
+}

@@ -1,0 +1,21 @@
+.dropbtn {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.dropbtn:active {
+  transform: translateY(2px);
+}
+
+.list {
+  position: absolute;
+  z-index: 99999;
+  padding: 12px 8px;
+  border-radius: 5px;
+  background-color: var(--HoverButton);
+}
+
+.list ul {
+  flex-direction: column;
+}
